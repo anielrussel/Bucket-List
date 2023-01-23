@@ -1,0 +1,178 @@
+body {
+  background-color: rgb(204, 184, 93);
+  color: white;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  width: 50%;
+  border-radius: 8px;
+  background-color: white;
+}
+.app-container h1 {
+  margin-bottom: 4rem;
+  color: #555;
+}
+.update-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.update-container input {
+  width: 25.5rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 2px solid #555;
+  padding-left: 1rem;
+}
+.button-update {
+  display: flex;
+  gap: 1rem;
+}
+.update-container button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 18px;
+  background-color: rgb(204, 184, 93);
+  border: none;
+  border-radius: 5px;
+}
+.update-container button:hover {
+  background-color: white;
+  border: 2px solid #555;
+}
+.add-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.add-container input {
+  width: 34.5rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 2px solid #555;
+  padding-left: 1rem;
+}
+.add-container button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 18px;
+  background-color: rgb(204, 184, 93);
+  border: none;
+  border-radius: 5px;
+}
+.add-container button:hover {
+  background-color: white;
+  border: 2px solid #555;
+}
+.task-bg {
+  border: 2px solid #555;
+  color: black;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px 140px 10px 15px;
+  font-size: 22px;
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+}
+.task-text img {
+  margin: 0 10px -5px 0;
+  width: 2rem;
+}
+.icons {
+  position: absolute;
+  right: 29rem;
+}
+.icons img {
+  width: 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.task-bg .done .task-text {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+@media screen and (max-width: 1440px) {
+  .add-container input {
+    width: 31rem;
+  }
+  .update-container input {
+    width: 22rem;
+  }
+  .icons {
+    right: 25rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .app-container {
+    margin-top: 5rem;
+  }
+  .add-container input,
+  .update-container input {
+    width: 28rem;
+  }
+  .task-bg {
+    width: 60%;
+  }
+  .icons {
+    right: 19rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .app-container {
+    width: 65%;
+  }
+  .icons {
+    right: 11rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .app-container {
+    width: 90%;
+  }
+  .add-container input,
+  .update-container input  {
+    width: 20rem;
+  }
+  .task-bg {
+    width: 48%;
+  }
+  .icons {
+    right: 3.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .app-container {
+    width: 90%;
+  }
+  .add-container input,
+  .update-container input  {
+    width: 18rem;
+  }
+  .task-bg {
+    width: 46%;
+  }
+  .icons {
+    right: 3rem;
+  }
+}
